@@ -1,0 +1,169 @@
+// ========== main.bicep ========== //
+targetScope = 'resourceGroup'
+var abbrs = loadJsonContent('./abbreviations.json')
+@minLength(3)
+@maxLength(20)
+@description('A unique prefix for all resources in this deployment. This should be 3-20 characters long:')
+param environmentName string
+
+@description('Optional. created by user name')
+param createdBy string = contains(deployer(), 'userPrincipalName')? split(deployer().userPrincipalName, '@')[0]: deployer().objectId
+
+// @minLength(1)
+// @description('Industry use case for deployment:')
+// @allowed([
+//   'Retail-sales-analysis'
+//   'Insurance-improve-customer-meetings'
+// ])
+// param usecase string 
+
+
+@minLength(1)
+@description('Secondary location for databases creation(example:eastus2):')
+param secondaryLocation string = 'eastus2'
+
+@minLength(1)
+@description('GPT model deployment type:')
+@allowed([
+  'Standard'
+  'GlobalStandard'
+])
+param deploymentType string = 'GlobalStandard'
+
+@description('Name of the GPT model to deploy:')
+param gptModelName string = 'gpt-4o-mini'
+
+@description('Version of the GPT model to deploy:')
+param gptModelVersion string = '2024-07-18'
+
+param azureOpenAIApiVersion string = '2025-01-01-preview'
+
+param azureAiAgentApiVersion string = '2025-05-01'
+
+@minValue(10)
+@description('Capacity of the GPT deployment:')
+// You can increase this, but capacity is limited per model/region, so you will get errors if you go over
+// https://learn.microsoft.com/en-us/azure/ai-services/openai/quotas-limits
+param gptDeploymentCapacity int = 150
+
+@description('Optional. The tags to apply to all deployed Azure resources.')
+param tags resourceInput<'Microsoft.Resources/resourceGroups@2025-04-01'>.tags = {}
+
+@minLength(1)
+@description('Name of the Text Embedding model to deploy:')
+@allowed([
+  'text-embedding-ada-002'
+])
+param embeddingModel string = 'text-embedding-ada-002'
+
+@minValue(10)
+@description('Capacity of the Embedding Model deployment')
+param embeddingDeploymentCapacity int = 80
+
+// param imageTag string = 'latest_v2'
+
+param AZURE_LOCATION string=''
+var solutionLocation = empty(AZURE_LOCATION) ? resourceGroup().location : AZURE_LOCATION
+
+var uniqueId = toLower(uniqueString(subscription().id, environmentName, solutionLocation))
+
+@allowed([
+  'australiaeast'
+  'eastus'
+  'eastus2'
+  'francecentral'
+  'japaneast'
+  'swedencentral'
+  'uksouth'
+  'westus'
+  'westus3'
+])
+@metadata({
+  azd:{
+    type: 'location'
+    usageName: [
+      'OpenAI.GlobalStandard.gpt-4o-mini,150'
+      // 'OpenAI.GlobalStandard.text-embedding-ada-002,80'
+    ]
+  }
+})
+@description('Location for AI Foundry deployment. This is the location where the AI Foundry resources will be deployed.')
+param aiDeploymentsLocation string
+
+var solutionPrefix = 'da${padLeft(take(uniqueId, 12), 12, '0')}'
+
+// @description('Name of the Azure Container Registry')
+// param acrName string = 'dataagentscontainerreg'
+
+//Get the current deployer's information
+var deployerInfo = deployer()
+var deployingUserPrincipalId = deployerInfo.objectId
+
+// ========== Resource Group Tag ========== //
+resource resourceGroupTags 'Microsoft.Resources/tags@2021-04-01' = {
+  name: 'default'
+  properties: {
+    tags: union(
+      reference(
+        resourceGroup().id, 
+        '2021-04-01', 
+        'Full'
+      ).tags ?? {},
+      {
+        TemplateName: 'IQs Workshop'
+        CreatedBy: createdBy
+      },
+      tags
+    )
+  }
+}
+// AI Foundry Module (AI Services, Search, Storage, etc.)
+module foundry './modules/foundry.bicep' = {
+  name: 'foundry'
+  params: {
+    location: aiDeploymentsLocation
+    tags: tags
+    accountName: '${abbrs.ai.aiServices}${solutionPrefix}'
+    projectName: '${abbrs.ai.aiFoundryProject}${solutionPrefix}'
+    searchName: '${abbrs.ai.aiSearch}${solutionPrefix}'
+    storageName: '${abbrs.storage.storageAccount}${solutionPrefix}'
+    logAnalyticsName: '${abbrs.managementGovernance.logAnalyticsWorkspace}${solutionPrefix}'
+    appInsightsName: '${abbrs.managementGovernance.applicationInsights}${solutionPrefix}'
+    chatModel: gptModelName
+    chatModelVersion: gptModelVersion
+    chatModelCapacity: gptDeploymentCapacity
+    embeddingModel: embeddingModel
+    embeddingModelCapacity: embeddingDeploymentCapacity
+    deployingUserPrincipalId: az.deployer().objectId
+  }
+}
+
+// Outputs for azd (saved to .azure/<env>/.env)
+output AZURE_LOCATION string = aiDeploymentsLocation
+output AZURE_TENANT_ID string = tenant().tenantId
+output AZURE_SUBSCRIPTION_ID string = subscription().subscriptionId
+output AZURE_RESOURCE_GROUP string = resourceGroup().name
+output SOLUTION_PREFIX string = solutionPrefix
+
+// AI Services
+output AZURE_AI_SERVICES_NAME string = foundry.outputs.accountName
+output AZURE_AI_PROJECT_NAME string = foundry.outputs.projectName
+output AZURE_AI_PROJECT_ENDPOINT string = foundry.outputs.projectEndpoint
+output AZURE_AI_ENDPOINT string = foundry.outputs.aiEndpoint
+output AZURE_OPENAI_ENDPOINT string = foundry.outputs.openAIEndpoint
+
+// AI Search
+output AZURE_AI_SEARCH_NAME string = foundry.outputs.searchName
+output AZURE_AI_SEARCH_ENDPOINT string = foundry.outputs.searchEndpoint
+
+// Storage
+output AZURE_STORAGE_ACCOUNT_NAME string = foundry.outputs.storageName
+output AZURE_STORAGE_BLOB_ENDPOINT string = foundry.outputs.storageBlobEndpoint
+
+// Monitoring
+output AZURE_APPINSIGHTS_NAME string = foundry.outputs.appInsightsName
+output AZURE_APPINSIGHTS_CONNECTION_STRING string = foundry.outputs.appInsightsConnectionString
+
+// Models
+output AZURE_CHAT_MODEL string = gptModelName
+output AZURE_EMBEDDING_MODEL string = embeddingModel

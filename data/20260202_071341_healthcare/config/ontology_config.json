@@ -1,0 +1,50 @@
+{
+    "scenario": "healthcare",
+    "name": "Patient Records and Appointment Scheduling",
+    "description": "Manage patient records and scheduling of appointments",
+    "tables": {
+        "patients": {
+            "columns": [
+                "patient_id",
+                "name",
+                "date_of_birth"
+            ],
+            "types": {
+                "patient_id": "String",
+                "name": "String",
+                "date_of_birth": "Date"
+            },
+            "key": "patient_id",
+            "source_table": "patients"
+        },
+        "appointments": {
+            "columns": [
+                "appointment_id",
+                "patient_id",
+                "appointment_date",
+                "appointment_type",
+                "actual_wait_minutes",
+                "duration_minutes"
+            ],
+            "types": {
+                "appointment_id": "String",
+                "patient_id": "String",
+                "appointment_date": "Date",
+                "appointment_type": "String",
+                "actual_wait_minutes": "BigInt",
+                "duration_minutes": "BigInt"
+            },
+            "key": "appointment_id",
+            "source_table": "appointments"
+        }
+    },
+    "relationships": [
+        {
+            "name": "patient_appointment",
+            "from": "patients",
+            "to": "appointments",
+            "fromKey": "patient_id",
+            "toKey": "patient_id"
+        }
+    ]
+}

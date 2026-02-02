@@ -1,0 +1,10 @@
+{
+  "index_name": "dau5nxrsayiopf-documents",
+  "search_endpoint": "https://srch-dau5nxrsayiopf.search.windows.net",
+  "document_count": 4,
+  "pdf_files": [
+    "patient_appointment_policy.pdf",
+    "patient_health_information_policy.pdf",
+    "patient_treatment_rights_policy.pdf"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "ai": {
+    "aiServices": "aisa-",
+    "aiFoundryProject": "aifp-",
+    "aiSearch": "srch-"
+  },
+  "storage": {
+    "storageAccount": "st"
+  },
+  "managementGovernance": {
+    "logAnalyticsWorkspace": "log-",
+    "applicationInsights": "appi-"
+  },
+  "containers": {
+    "containerRegistry": "cr",
+    "containerAppsEnvironment": "cae-",
+    "containerApp": "ca-"
+  }
+}

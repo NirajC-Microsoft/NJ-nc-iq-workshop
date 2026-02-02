@@ -1,0 +1,7 @@
+name: fabric-ontology-lab
+metadata:
+  template: fabric-ontology-lab@0.0.1
+services: {}
+infra:
+  provider: bicep
+  path: infra
