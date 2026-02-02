@@ -1,0 +1,76 @@
+site_name: Build faster with Solution Accelerators – Foundry IQ + Fabric IQ
+site_description: Hands-on workshop for building AI agents that combine unstructured document knowledge with structured enterprise data
+site_url: https://nchandhi.github.io/nc-iq-workshop
+
+repo_name: GitHub
+repo_url: https://github.com/nchandhi/nc-iq-workshop
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - content.code.copy
+    - content.tabs.link
+  icon:
+    repo: fontawesome/brands/github
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - tables
+  - attr_list
+  - md_in_html
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+plugins:
+  - search
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/nchandhi/nc-iq-workshop
+
+nav:
+  - Overview: index.md
+  - Get Started: get-started.md
+  - "01 Deploy Solution":
+    - Overview: 01-deploy/index.md
+    - Deploy Infrastructure: 01-deploy/infrastructure.md
+    - Configure Environment: 01-deploy/configure.md
+    - Run Default Scenario: 01-deploy/run.md
+  - "02 Customize for Your Customer":
+    - Overview: 02-customize/index.md
+    - Choose Industry & Use Case: 02-customize/choose.md
+    - Generate & Build: 02-customize/generate.md
+    - Demo Your PoC: 02-customize/demo.md
+  - "03 Understand the Technology":
+    - Overview: 03-understand/index.md
+    - "Foundry IQ: Documents": 03-understand/foundry-iq.md
+    - "Fabric IQ: Data": 03-understand/fabric-iq.md
+  - "04 Cleanup": 04-cleanup.md

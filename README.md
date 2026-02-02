@@ -69,7 +69,6 @@ All Azure endpoints are automatically saved to `.azure/<env>/.env` and loaded by
 #### Python Environment
 
 ```bash
-cd scripts
 python -m venv .venv
 
 # Windows
