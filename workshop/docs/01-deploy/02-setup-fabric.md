@@ -42,4 +42,4 @@ You should see your workspace listed.
 
 ---
 
-[← Deploy Azure resources](01-deploy-azure.md) | [Configure environment →](03-configure.md)
+[← Deploy Azure resources](01-deploy-azure.md) | [Configure dev environment →](03-configure.md)

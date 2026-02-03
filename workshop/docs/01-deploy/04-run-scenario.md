@@ -1,4 +1,4 @@
-# Run Default Scenario
+# Build solution
 
 ## Run the Full Pipeline
 
@@ -112,4 +112,4 @@ You: exit
     
     ---
 
-[← Configure environment](03-configure.md) | [Customize for your use case →](../02-customize/index.md)
+[← Configure dev environment](03-configure.md) | [Customize for your use case →](../02-customize/index.md)

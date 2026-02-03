@@ -76,4 +76,4 @@ When you run the AI generator for your scenario:
 
 ---
 
-[← Run default scenario](../01-deploy/04-run-scenario.md) | [Generate & Build →](02-generate.md)
+[← Build solution](../01-deploy/04-run-scenario.md) | [Generate & Build →](02-generate.md)

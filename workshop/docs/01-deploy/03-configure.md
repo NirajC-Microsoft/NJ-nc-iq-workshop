@@ -1,4 +1,4 @@
-# Configure Environment
+# Configure dev environment
 
 ## Python Environment
 
@@ -85,4 +85,4 @@ Before proceeding:
 
 ---
 
-[← Configure Fabric items and connection](02-setup-fabric.md) | [Run default scenario →](04-run-scenario.md)
+[← Configure Fabric items and connection](02-setup-fabric.md) | [Build solution →](04-run-scenario.md)
