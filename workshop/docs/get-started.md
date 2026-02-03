@@ -47,4 +47,6 @@ Prepare for technical questions in customer conversations:
 - **Fabric IQ**: How ontology translates business questions to SQL
 - **Multi-Tool Agent**: How the agent decides which source to query
 
-[Start Lab →](01-deploy/index.md)
+---
+
+[← Overview](index.md) | [Start Step 1: Deploy solution →](01-deploy/index.md)

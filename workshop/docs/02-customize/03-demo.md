@@ -80,3 +80,7 @@ python scripts/00_build_solution.py --ai --clean \
   --industry "New Industry" \
   --usecase "New use case description"
 ```
+
+---
+
+[← Generate & Build](02-generate.md) | [Step 3: How it works →](../03-understand/index.md)

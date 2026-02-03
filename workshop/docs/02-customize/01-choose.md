@@ -111,6 +111,6 @@ DATA_SIZE=small
 !!! tip "Start Small"
     Use `small` for customer demos. It's faster to generate and easier to walk through.
 
-## Next Step
+---
 
-Once configured, proceed to [Generate Custom Data](generate.md) to build your PoC.
+[← Step 2 Overview](index.md) | [Generate & Build →](02-generate.md)

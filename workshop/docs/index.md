@@ -28,5 +28,7 @@ Powered by **Microsoft Fabric** and **Microsoft Foundry**:
     2. Run **Step 2** to customize for your use case
     3. Review **Step 3** to prepare for technical questions
 
+---
+
 [Get Started →](get-started.md)
 

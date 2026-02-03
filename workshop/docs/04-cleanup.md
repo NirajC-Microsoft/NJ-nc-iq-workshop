@@ -95,3 +95,7 @@ python scripts/00_build_solution.py --ai --clean \
 ---
 
 **Go build amazing customer demos! 🚀**
+
+---
+
+[← Fabric IQ: Data](03-understand/02-fabric-iq.md) | [Back to Overview →](index.md)

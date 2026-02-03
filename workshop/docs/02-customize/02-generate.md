@@ -145,6 +145,6 @@ Build complete! Ready for customer demo.
 - Check you have Contributor access to the workspace
 - Wait a minute and retry (Fabric operations can be slow)
 
-## Next Step
+---
 
-Your PoC is ready! Proceed to [Demo Your PoC](demo.md) to demo it.
+[← Choose Industry & Use Case](01-choose.md) | [Demo Your PoC →](03-demo.md)

@@ -66,5 +66,9 @@ This module prepares you for technical questions during customer conversations.
 
 ## Deep Dive Pages
 
-- **[Foundry IQ: Documents](foundry-iq.md)**: How agentic retrieval works
-- **[Fabric IQ: Data](fabric-iq.md)**: How ontology enables NL→SQL
+- **[Foundry IQ: Documents](01-foundry-iq.md)**: How agentic retrieval works
+- **[Fabric IQ: Data](02-fabric-iq.md)**: How ontology enables NL→SQL
+
+---
+
+[← Step 2: Demo Your PoC](../02-customize/03-demo.md) | [Foundry IQ: Documents →](01-foundry-iq.md)

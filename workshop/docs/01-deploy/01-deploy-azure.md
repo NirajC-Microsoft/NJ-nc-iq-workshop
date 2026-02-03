@@ -53,3 +53,7 @@ After deployment, Azure endpoints are automatically saved to `.azure/<env>/.env`
 
 !!! note "No Manual Configuration"
     You don't need to manually set Azure connection strings. The scripts read them from the azd environment automatically.
+
+---
+
+[← Step 1 Overview](index.md) | [Set up Fabric workspace →](02-setup-fabric.md)

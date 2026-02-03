@@ -65,3 +65,7 @@ Once running, you'll be able to ask:
 
 !!! success "One-Time Setup"
     Deploy once, then use **Step 2** to customize for each use case.
+
+---
+
+[← Get Started](../get-started.md) | [Deploy Azure resources →](01-deploy-azure.md)

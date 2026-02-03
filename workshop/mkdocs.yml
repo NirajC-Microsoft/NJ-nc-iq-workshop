@@ -59,18 +59,19 @@ extra:
 nav:
   - Overview: index.md
   - Get Started: get-started.md
-  - "01 Deploy solution":
+  - "Step 1: Deploy solution":
     - Overview: 01-deploy/index.md
-    - Deploy Infrastructure: 01-deploy/infrastructure.md
-    - Configure Environment: 01-deploy/configure.md
-    - Run Default Scenario: 01-deploy/run.md
-  - "02 Customize for your use case":
+    - Deploy Azure resources: 01-deploy/01-deploy-azure.md
+    - Set up Fabric workspace: 01-deploy/02-setup-fabric.md
+    - Configure environment: 01-deploy/03-configure.md
+    - Run default scenario: 01-deploy/04-run-scenario.md
+  - "Step 2: Customize for your use case":
     - Overview: 02-customize/index.md
-    - Choose Industry & Use Case: 02-customize/choose.md
-    - Generate & Build: 02-customize/generate.md
-    - Demo Your PoC: 02-customize/demo.md
-  - "03 How it works":
+    - Choose Industry & Use Case: 02-customize/01-choose.md
+    - Generate & Build: 02-customize/02-generate.md
+    - Demo Your PoC: 02-customize/03-demo.md
+  - "Step 3: How it works":
     - Overview: 03-understand/index.md
-    - "Foundry IQ: Documents": 03-understand/foundry-iq.md
-    - "Fabric IQ: Data": 03-understand/fabric-iq.md
-  - "04 Cleanup": 04-cleanup.md
+    - "Foundry IQ: Documents": 03-understand/01-foundry-iq.md
+    - "Fabric IQ: Data": 03-understand/02-fabric-iq.md
+  - "Step 4: Cleanup": 04-cleanup.md

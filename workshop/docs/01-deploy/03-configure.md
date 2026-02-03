@@ -73,4 +73,8 @@ Before proceeding:
 - [x] Fabric workspace ID configured
 
 !!! success "Ready to Run"
-    Continue to **[Run Default Scenario](run.md)** to see it in action.
+    Continue to the next step to see it in action.
+
+---
+
+[← Set up Fabric workspace](02-setup-fabric.md) | [Run default scenario →](04-run-scenario.md)
