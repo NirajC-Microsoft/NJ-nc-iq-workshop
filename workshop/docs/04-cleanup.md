@@ -55,11 +55,11 @@ You now have everything you need to accelerate customer engagements.
 
 ### What You Can Now Do
 
-- ✅ **Deploy in minutes** — Infrastructure as Code makes setup repeatable
-- ✅ **Generate any scenario** — AI creates realistic data for any industry
-- ✅ **Demo document intelligence** — Foundry IQ with agentic retrieval
-- ✅ **Demo data intelligence** — Fabric IQ with natural language queries
-- ✅ **Show combined power** — Multi-tool agent answers complex questions
+- ✅ **Deploy in minutes**: Infrastructure as Code makes setup repeatable
+- ✅ **Generate any scenario**: AI creates realistic data for any industry
+- ✅ **Demo document intelligence**: Foundry IQ with agentic retrieval
+- ✅ **Demo data intelligence**: Fabric IQ with natural language queries
+- ✅ **Show combined power**: Multi-tool agent answers complex questions
 
 ### Quick Reference: Building a Customer PoC
 

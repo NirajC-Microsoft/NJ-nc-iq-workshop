@@ -15,7 +15,7 @@
 
 | Component | Technology | Customer Value |
 |-----------|------------|----------------|
-| Sample Data | AI-Generated | Realistic demo tailored to customer's industry |
+| Sample Data | AI-Generated | Realistic demo tailored to your use case |
 | Business Ontology | Fabric IQ | Natural language queries over business data |
 | Knowledge Base | Foundry IQ | Intelligent search over policies & documents |
 | AI Agent | Multi-Tool Agent | Single interface combining both sources |
@@ -52,8 +52,8 @@ Generate custom data for **each use case**:
 
 Prepare for technical questions in customer conversations:
 
-- **Foundry IQ** — How agentic retrieval plans, iterates, and reflects
-- **Fabric IQ** — How ontology translates business questions to SQL
-- **Multi-Tool Agent** — How the agent decides which source to query
+- **Foundry IQ**: How agentic retrieval plans, iterates, and reflects
+- **Fabric IQ**: How ontology translates business questions to SQL
+- **Multi-Tool Agent**: How the agent decides which source to query
 
 [Start Lab →](01-deploy/index.md)

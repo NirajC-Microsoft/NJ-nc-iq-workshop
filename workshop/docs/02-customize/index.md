@@ -1,14 +1,14 @@
 # Customize for your use case
 
-This is where it gets exciting. Generate a complete working PoC tailored to **your industry and use case** in minutes.
+This is where it gets exciting. Generate a complete working PoC tailored to your industry and use case in minutes.
 
 ## What gets generated
 
-When you run the AI generator for a customer scenario:
+When you run the AI generator for your scenario:
 
 | Component | Generated Content |
 |-----------|-------------------|
-| **Documents** | Policies, procedures, FAQs specific to their industry |
+| **Documents** | Policies, procedures, FAQs specific to your industry |
 | **Data** | Realistic CSV files with industry-appropriate entities |
 | **Ontology** | Business rules and relationships for NL→SQL |
 | **Sample Questions** | Demo questions to showcase the solution |

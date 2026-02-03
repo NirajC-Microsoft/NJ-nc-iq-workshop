@@ -1,20 +1,18 @@
 # Overview
 
-## Why custom PoCs matter
+A strong PoC helps customers envision the impact on their business. It moves the conversation from "interesting idea" to "let's explore this." But creating something that feels relevant can take weeks of custom work: infrastructure, data pipelines, integrations, and tailored scenarios that reflect their challenges.
 
-Building a PoC usually means weeks of work, placeholder data, and "picture this..." conversations.
+This workshop helps you learn how to use solution accelerators to solve that by deploying industry-tailored scenarios quickly so you can demonstrate real value from the first conversation.
 
-This workshop flips that. Generate a working PoC for any industry in minutes — with realistic data that lets you show, not tell.
+## Let's build it together
 
-## The solution
-
-Build an AI solution that answers questions across documents and data — customized for any industry, in minutes not weeks.
+In this workshop, we'll deploy an AI solution using Fabric IQ and Foundry IQ, then customize it for your use case.
 
 Powered by **Microsoft Fabric** and **Microsoft Foundry**:
 
-- **Fabric IQ** — Translates natural language into SQL queries via ontology
-- **Foundry IQ** — Searches documents using agentic retrieval (plan, iterate, reflect)
-- **Multi-Tool Agent** — Routes questions to the right source automatically
+- **Fabric IQ**: Translates natural language into SQL queries via ontology
+- **Foundry IQ**: Searches documents using agentic retrieval (plan, iterate, reflect)
+- **Multi-Tool Agent**: Routes questions to the right source automatically
 
 ## Workshop flow
 
