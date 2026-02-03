@@ -85,4 +85,4 @@ Before proceeding:
 
 ---
 
-[← Set up Fabric workspace](02-setup-fabric.md) | [Run default scenario →](04-run-scenario.md)
+[← Configure Fabric items and connection](02-setup-fabric.md) | [Run default scenario →](04-run-scenario.md)
