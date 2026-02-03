@@ -11,18 +11,9 @@
 [![Open in Dev Containers](https://img.shields.io/badge/Dev%20Containers-Open-blue?logo=visualstudiocode)](https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/nchandhi/nc-iq-workshop)
 [![Open in VS Code (Web)](https://img.shields.io/badge/VS%20Code-Open%20in%20Web-blue?logo=visualstudiocode)](https://vscode.dev/github/nchandhi/nc-iq-workshop)
 
-## What You'll Demonstrate
-
-| Component | Technology | Customer Value |
-|-----------|------------|----------------|
-| Sample Data | AI-Generated | Realistic demo tailored to your use case |
-| Business Ontology | Fabric IQ | Natural language queries over business data |
-| Knowledge Base | Foundry IQ | Intelligent search over policies & documents |
-| AI Agent | Multi-Tool Agent | Single interface combining both sources |
-
 ## Your PoC journey
 
-### Module 01: Deploy solution (do once)
+### Step 1: Deploy solution (do once)
 
 Deploy infrastructure and run with pre-built **Retail / E-Commerce** data:
 
@@ -32,7 +23,7 @@ Deploy infrastructure and run with pre-built **Retail / E-Commerce** data:
 - See the agent working with sample Retail data
 - Takes ~15 minutes
 
-### Module 02: Customize for your use case (repeat)
+### Step 2: Customize for your use case (repeat)
 
 Generate custom data for **each use case**:
 
@@ -46,9 +37,9 @@ Generate custom data for **each use case**:
 | **Customer X** | **Their data + Their docs** | **Their burning questions** |
 
 !!! tip "Pre-PoC prep"
-    Run Module 02 before your PoC. Enter the industry and a brief use case description. The AI generates realistic sample data, documents, and test questions tailored to your scenario.
+    Run Step 2 before your PoC. Enter the industry and a brief use case description. The AI generates realistic sample data, documents, and test questions tailored to your scenario.
 
-### Module 03: How it works
+### Step 3: How it works
 
 Prepare for technical questions in customer conversations:
 

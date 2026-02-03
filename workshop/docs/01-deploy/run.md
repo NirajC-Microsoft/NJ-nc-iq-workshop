@@ -114,4 +114,4 @@ You: exit
     - [x] **Foundry IQ** retrieving document knowledge (policies, guides)
     - [x] **Multi-Tool Agent** combining both sources
     
-    **Next:** Customize for your use case in [Module 02: Customize](../02-customize/index.md)
+    **Next:** Customize for your use case in [Step 2: Customize](../02-customize/index.md)

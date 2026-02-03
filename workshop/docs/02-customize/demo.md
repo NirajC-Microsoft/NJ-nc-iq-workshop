@@ -67,7 +67,7 @@ Before customer meetings, prepare 5-7 questions:
     - [x] Combine sources for complex questions
     - [x] Use industry-appropriate terminology
     
-    **Next:** Review [Module 03: How it works](../03-understand/index.md) to prepare for technical questions
+    **Next:** Review [Step 3: How it works](../03-understand/index.md) to prepare for technical questions
 
 ## Quick Reference: Regenerate for Another Customer
 

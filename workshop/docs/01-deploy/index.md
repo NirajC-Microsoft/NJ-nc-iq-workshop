@@ -64,4 +64,4 @@ Once running, you'll be able to ask:
 > "Based on our shipping policy, which pending orders qualify for free shipping?"
 
 !!! success "One-Time Setup"
-    Deploy once, then use **Module 02** to customize for each customer engagement.
+    Deploy once, then use **Step 2** to customize for each use case.
