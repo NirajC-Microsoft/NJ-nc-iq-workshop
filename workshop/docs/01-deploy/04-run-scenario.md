@@ -2,17 +2,16 @@
 
 ## Run the Full Pipeline
 
-One command builds everything:
+One command builds everything using the pre-populated sample data:
 
 ```bash
-python scripts/00_build_solution.py
+python scripts/00_build_solution.py --from 02
 ```
 
-This runs all steps automatically:
+This uses the `data/default` folder and runs all setup steps:
 
 | Step | What Happens | Time |
 |------|--------------|------|
-| 01 | Load sample data | ~10s |
 | 02 | Setup Fabric workspace | ~30s |
 | 03 | Load data into Fabric | ~1min |
 | 04 | Generate NL2SQL prompt | ~5s |
@@ -24,19 +23,16 @@ This runs all steps automatically:
 
 ```
 ============================================================
-Building Solution: Default
+Building Solution
 ============================================================
-
-[01/07] Loading sample data...
-  ✓ Generating scenario data
 
 [02/07] Setting up Fabric workspace...
   ✓ Lakehouse: iqworkshop_lakehouse
   ✓ Warehouse: iqworkshop_warehouse
 
 [03/07] Loading data into Fabric...
-  ✓ products.csv → 16 rows
-  ✓ orders.csv → 40 rows
+  ✓ network_outages.csv → 25 rows
+  ✓ trouble_tickets.csv → 50 rows
 
 [04/07] Generating NL2SQL prompt...
   ✓ Schema prompt created
@@ -73,34 +69,34 @@ Tools: [ai_search, fabric_iq]
 Type 'exit' to quit.
 ------------------------------------------------------------
 
-You: How many products do we have?
+You: How many outages occurred last month?
 
-Agent: Based on the database, we currently have 16 products in our catalog
-       across 4 categories: Electronics, Apparel, Home & Kitchen, and Sports.
+Agent: Based on the database, there were 12 network outages recorded 
+       last month across all regions.
 
-You: What's our return policy?
+You: What are the policies for notifying customers of outages?
 
-Agent: According to our Return Policy document:
+Agent: According to our Customer Service Policies document:
        
-       - Items can be returned within 30 days of purchase
-       - Products must be in original packaging and unused condition
-       - Electronics have a 15-day return window
-       - Final sale items cannot be returned
+       - Customers must be notified within 15 minutes of confirmed outage
+       - Use SMS, email, and app notifications for affected customers
+       - Provide estimated restoration time when available
+       - Send updates every 30 minutes during extended outages
        
-       [Source: return_policy.pdf, page 1]
+       [Source: customer_service_policies.pdf, page 2]
 
-You: Which electronics products have low stock that might need reordering?
+You: Which outages exceeded the maximum duration defined in our policy?
 
-Agent: Let me check the inventory data against reorder points...
+Agent: Let me check the outage data against our policy thresholds...
 
-       These electronics products are at or below their reorder point:
+       These outages exceeded the 4-hour maximum duration policy:
        
-       | Product | Stock | Reorder Point | Status |
-       |---------|-------|---------------|--------|
-       | Wireless Headphones | 45 | 50 | Reorder needed |
-       | Smartwatch Pro | 22 | 30 | Reorder needed |
+       | Outage ID | Region | Duration | Policy Max | Status |
+       |-----------|--------|----------|------------|--------|
+       | OUT-1042 | Northeast | 6.5 hrs | 4 hrs | Exceeded |
+       | OUT-1089 | West | 5.2 hrs | 4 hrs | Exceeded |
        
-       Recommend placing purchase orders for these items.
+       Recommend reviewing root cause and escalation procedures.
 
 You: exit
 ```
@@ -110,8 +106,8 @@ You: exit
 !!! success "Solution Deployed!"
     You now have a working solution with:
     
-    - [x] **Fabric IQ** answering data questions (product counts, orders, inventory)
-    - [x] **Foundry IQ** retrieving document knowledge (policies, guides)
+    - [x] **Fabric IQ** answering data questions
+    - [x] **Foundry IQ** retrieving document knowledge
     - [x] **Multi-Tool Agent** combining both sources
     
     ---

@@ -147,4 +147,4 @@ Build complete! Ready for customer demo.
 
 ---
 
-[← Choose Industry & Use Case](01-choose.md) | [Demo Your PoC →](03-demo.md)
+[← Overview](index.md) | [Demo Your PoC →](03-demo.md)

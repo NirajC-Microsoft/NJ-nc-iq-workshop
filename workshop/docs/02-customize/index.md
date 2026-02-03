@@ -15,7 +15,7 @@ When you run the AI generator for your scenario:
 
 ## Example Transformations
 
-=== "Retail Customer"
+=== "Retail"
 
     **Input:** "Fashion e-commerce with seasonal inventory and returns"
     
@@ -29,7 +29,7 @@ When you run the AI generator for your scenario:
     - "What's our return policy for sale items?"
     - "Which products from the spring collection have low stock?"
 
-=== "Manufacturing Customer"
+=== "Manufacturing"
 
     **Input:** "Automotive parts with quality control and suppliers"
     
@@ -43,7 +43,21 @@ When you run the AI generator for your scenario:
     - "Which machines are overdue for maintenance?"
     - "What's our QC process for critical components?"
 
-=== "Finance Customer"
+=== "Healthcare"
+
+    **Input:** "Multi-location clinic with patient scheduling"
+    
+    **Output:**
+    - `patients.csv` — Patient records, appointments
+    - `providers.csv` — Doctor availability, specialties
+    - `scheduling_policy.pdf` — Appointment guidelines
+    - `insurance_guide.pdf` — Coverage verification
+    
+    **Demo Questions:**
+    - "Which providers have availability this week?"
+    - "What's our policy for same-day appointments?"
+
+=== "Finance"
 
     **Input:** "Regional bank with loans and compliance"
     
@@ -57,15 +71,9 @@ When you run the AI generator for your scenario:
     - "Which loan applications meet our approval criteria?"
     - "What are our compliance requirements for large transactions?"
 
-!!! tip "Customer Conversations to PoC"
-    Listen for customer pain points like:
-    
-    - "We have policies in documents but data in databases..."
-    - "Users ask questions that need both..."
-    - "We want a single interface for..."
-    
-    These are your inputs for the generator!
+!!! tip "The more specific, the better"
+    The AI uses your description to generate appropriate entity names, realistic data relationships, industry-specific documents, and relevant sample questions.
 
 ---
 
-[← Run default scenario](../01-deploy/04-run-scenario.md) | [Choose Industry & Use Case →](01-choose.md)
+[← Run default scenario](../01-deploy/04-run-scenario.md) | [Generate & Build →](02-generate.md)

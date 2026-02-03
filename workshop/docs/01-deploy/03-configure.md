@@ -55,12 +55,20 @@ https://app.fabric.microsoft.com/groups/{workspace-id}/...
 
 ### Update Environment File
 
-Add your Fabric settings to `.env` in the project root:
+Copy `.env.example` to `.env` and update your Fabric settings:
+
+```bash
+cp .env.example .env
+```
+
+Edit `.env` in the project root:
 
 ```env
 # --- Microsoft Fabric (required) ---
 FABRIC_WORKSPACE_ID=your-workspace-id-here
-SOLUTION_NAME=iqworkshop
+
+# --- Data Folder (pre-populated with default scenario) ---
+DATA_FOLDER=data/default
 ```
 
 ## Checkpoint

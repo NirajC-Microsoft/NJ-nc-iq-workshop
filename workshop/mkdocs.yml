@@ -67,7 +67,6 @@ nav:
     - Run default scenario: 01-deploy/04-run-scenario.md
   - Customize for your use case:
     - Overview: 02-customize/index.md
-    - Choose Industry & Use Case: 02-customize/01-choose.md
     - Generate & Build: 02-customize/02-generate.md
     - Demo Your PoC: 02-customize/03-demo.md
   - Deep dive:
