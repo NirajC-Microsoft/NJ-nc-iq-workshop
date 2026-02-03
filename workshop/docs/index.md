@@ -43,3 +43,4 @@ Powered by **Microsoft Fabric** and **Microsoft Foundry**:
     3. Review **Module 03** to prepare for technical questions
 
 [Get Started →](get-started.md)
+
