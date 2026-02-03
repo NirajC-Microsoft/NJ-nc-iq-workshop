@@ -3,6 +3,6 @@
   "multi_tool_agent_name": "dau5nxrsayiopf-multi-tool-agent",
   "endpoint": "https://aisa-dau5nxrsayiopf.services.ai.azure.com/api/projects/aifp-dau5nxrsayiopf",
   "workspace_id": "fb695e19-2010-40cf-977b-6aff4eae323c",
-  "lakehouse_name": "dau5nxrsayiopf_lakehouse_2",
+  "lakehouse_name": "dau5nxrsayiopf_lakehouse_4",
   "search_index": "dau5nxrsayiopf-documents"
 }

@@ -1,0 +1,12 @@
+{
+  "workspace_id": "fb695e19-2010-40cf-977b-6aff4eae323c",
+  "lakehouse_id": "965c7ddf-d16e-43df-bacf-24f36723f379",
+  "lakehouse_name": "dau5nxrsayiopf_lakehouse_4",
+  "ontology_id": "b611a342-a785-4a72-ac31-706346c67a5b",
+  "ontology_name": "dau5nxrsayiopf_ontology_4",
+  "solution_name": "dau5nxrsayiopf",
+  "data_folder": "C:\\Work\\15_fabric_ontology\\data\\20260203_112459_telecommunications",
+  "created_at": "2026-02-03T11:27:44.074778",
+  "data_agent_id": "837e1fab-b7e8-45e5-90ae-261f1ea522bc",
+  "data_agent_name": "dau5nxrsayiopf_dataagent"
+}

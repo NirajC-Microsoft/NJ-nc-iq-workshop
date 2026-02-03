@@ -12,7 +12,7 @@ This runs all steps automatically:
 
 | Step | What Happens | Time |
 |------|--------------|------|
-| 01 | Load Retail sample data | ~10s |
+| 01 | Load sample data | ~10s |
 | 02 | Setup Fabric workspace | ~30s |
 | 03 | Load data into Fabric | ~1min |
 | 04 | Generate NL2SQL prompt | ~5s |
@@ -24,11 +24,11 @@ This runs all steps automatically:
 
 ```
 ============================================================
-Building Solution: Retail
+Building Solution: Default
 ============================================================
 
 [01/07] Loading sample data...
-  ✓ Generating Retail scenario data
+  ✓ Generating scenario data
 
 [02/07] Setting up Fabric workspace...
   ✓ Lakehouse: iqworkshop_lakehouse
@@ -42,13 +42,13 @@ Building Solution: Retail
   ✓ Schema prompt created
 
 [05/07] Creating Fabric Data Agent...
-  ✓ Agent: fabric-agent-retail
+  ✓ Agent: fabric-data-agent
 
 [06/07] Uploading documents to AI Search...
   ✓ 3 documents → 24 chunks indexed
 
 [07/07] Creating Multi-Tool Agent...
-  ✓ Agent: retail-multi-agent
+  ✓ Agent: multi-tool-agent
 
 ============================================================
 Build complete! Run: python scripts/08a_test_multi_tool_agent.py
@@ -67,7 +67,7 @@ python scripts/08a_test_multi_tool_agent.py
 ============================================================
 Multi-Tool Agent Testing
 ============================================================
-Agent: retail-multi-agent
+Agent: multi-tool-agent
 Tools: [ai_search, fabric_iq]
 
 Type 'exit' to quit.

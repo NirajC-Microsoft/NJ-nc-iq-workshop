@@ -15,12 +15,12 @@
 
 ### Step 1: Deploy solution (do once)
 
-Deploy infrastructure and run with pre-built **Retail / E-Commerce** data:
+Deploy infrastructure and run with pre-built **sample** data:
 
 - Deploy **Microsoft Foundry** and Azure resources (AI Services, AI Search, Storage)
 - Configure **Microsoft Fabric** connection
 - Configure your environment
-- See the agent working with sample Retail data
+- See the agent working with sample data
 - Takes ~15 minutes
 
 ### Step 2: Customize for your use case (repeat)
