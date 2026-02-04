@@ -18,8 +18,8 @@ Powered by **Microsoft Fabric** and **Microsoft Foundry**:
 
 | Step | Description | Time |
 |------|-------------|------|
-| **1. Deploy solution** | Deploy Microsoft Foundry + Fabric & run with default demo | ~15 min |
-| **2. Customize for your use case** | Generate industry-specific data and demo | ~20 min |
+| **1. Deploy solution** | Deploy Microsoft Foundry + Fabric & run with default scenario | ~15 min |
+| **2. Customize for your use case** | Generate industry-specific data and test | ~20 min |
 | **3. Deep dive** | Technical deep dive for Q&A | ~15 min |
 | **4. Cleanup** | Delete Azure resources | ~5 min |
 

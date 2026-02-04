@@ -57,8 +57,8 @@ You now have everything you need to accelerate customer engagements.
 
 - ✅ **Deploy in minutes**: Infrastructure as Code makes setup repeatable
 - ✅ **Generate any scenario**: AI creates realistic data for any industry
-- ✅ **Demo document intelligence**: Foundry IQ with agentic retrieval
-- ✅ **Demo data intelligence**: Fabric IQ with natural language queries
+- ✅ **Show document intelligence**: Foundry IQ with agentic retrieval
+- ✅ **Show data intelligence**: Fabric IQ with natural language queries
 - ✅ **Show combined power**: Multi-tool agent answers complex questions
 
 ### Quick Reference: Building a Customer PoC
@@ -94,7 +94,7 @@ python scripts/00_build_solution.py --ai --clean \
 
 ---
 
-**Go build amazing customer demos! 🚀**
+**Go build amazing customer PoCs! 🚀**
 
 ---
 

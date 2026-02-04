@@ -2,16 +2,29 @@
 
 This is where it gets exciting. Generate a complete working PoC tailored to your industry and use case in minutes.
 
-## What gets generated
+## What you provide
 
-When you run the AI generator for your scenario:
+Simply provide two inputs:
+
+| Input | Description | Example |
+|-------|-------------|---------|
+| **Industry** | The business domain or vertical | Insurance, Retail, Manufacturing, Finance |
+| **Use Case** | What the solution should help with | "Claims processing and policy management" |
+
+!!! tip "Be descriptive"
+    The more detail you provide in your use case, the better the generated content will match your scenario. For example:
+    
+    - ✓ "Property insurance with claims processing, policy management, and coverage verification"
+    - ✗ "Insurance stuff"
+
+## What gets generated
 
 | Component | Generated Content |
 |-----------|-------------------|
 | **Documents** | Policies, procedures, FAQs specific to your industry |
 | **Data** | Realistic CSV files with industry-appropriate entities |
 | **Ontology** | Business rules and relationships for NL→SQL |
-| **Sample Questions** | Demo questions to showcase the solution |
+| **Sample Questions** | Questions to test the solution |
 
 ## Example Transformations
 
@@ -25,7 +38,7 @@ When you run the AI generator for your scenario:
     - `return_policy.pdf` — Return and exchange guidelines
     - `shipping_guide.pdf` — Delivery options and timelines
     
-    **Demo Questions:**
+    **Sample Questions:**
     - "What's our return policy for sale items?"
     - "Which products from the spring collection have low stock?"
 
@@ -39,7 +52,7 @@ When you run the AI generator for your scenario:
     - `quality_standards.pdf` — QC procedures
     - `maintenance_guide.pdf` — Equipment maintenance protocols
     
-    **Demo Questions:**
+    **Sample Questions:**
     - "Which machines are overdue for maintenance?"
     - "What's our QC process for critical components?"
 
@@ -53,7 +66,7 @@ When you run the AI generator for your scenario:
     - `claims_process.pdf` — How to file claims
     - `coverage_guide.pdf` — Policy coverage explanations
     
-    **Demo Questions:**
+    **Sample Questions:**
     - "Which claims are approaching our SLA deadline?"
     - "What does our standard policy cover?"
 
@@ -67,7 +80,7 @@ When you run the AI generator for your scenario:
     - `lending_policy.pdf` — Approval criteria
     - `compliance_guide.pdf` — Regulatory requirements
     
-    **Demo Questions:**
+    **Sample Questions:**
     - "Which loan applications meet our approval criteria?"
     - "What are our compliance requirements for large transactions?"
 

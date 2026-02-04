@@ -10,7 +10,7 @@ python scripts/08_test_foundry_agent.py
 
 ## Use the Generated Sample Questions
 
-Each scenario generates ready-to-use demo questions in the data folder:
+Each scenario generates ready-to-use sample questions in the data folder:
 
 ```bash
 # View sample questions for your scenario
@@ -28,7 +28,7 @@ The file contains three categories of questions:
 !!! tip "Use these questions first"
     The generated questions are tailored to your scenario's data and documents. Start with these before improvising.
 
-## Demo Tips
+## Testing Tips
 
 ### Start with structured data questions
 
@@ -60,7 +60,7 @@ This is the "wow" moment: questions that need both sources:
 "Which [items] don't comply with our [policy/guidelines]?"
 ```
 
-## Prepare your demo script
+## Prepare your test script
 
 Before customer meetings, prepare 5-7 questions:
 
@@ -75,11 +75,11 @@ Before customer meetings, prepare 5-7 questions:
 | 7 | **Combined** | "What percentage of tickets were resolved within our SLA?" |
 
 !!! tip "Let customers ask questions"
-    After your prepared demo, let customers ask their own questions. This shows the solution handles real scenarios, not just scripted ones.
+    After your prepared questions, let customers ask their own questions. This shows the solution handles real scenarios, not just scripted ones.
 
 ## Checkpoint
 
-!!! success "Ready for Customer Demo"
+!!! success "Ready for Customer PoC"
     Your custom PoC should:
     
     - [x] Answer structured data questions accurately

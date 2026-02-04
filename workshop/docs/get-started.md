@@ -29,8 +29,8 @@ Deploy infrastructure and run with pre-built **sample** data:
 
 Generate custom data for **each use case**:
 
-| Customer Industry | Use Case Example | Demo Questions |
-|-------------------|------------------|----------------|
+| Customer Industry | Use Case Example | Sample Questions |
+|-------------------|------------------|------------------|
 | Telecommunications | Network outages + service policies | "Which outages exceeded our SLA threshold?" |
 | Manufacturing | Equipment data + maintenance docs | "Which machines are overdue for maintenance per our schedule?" |
 | Retail | Product catalog + return policies | "What's our return policy for electronics over $500?" |

@@ -53,7 +53,7 @@ Use Case: Property insurance with claims processing and policy management
   ✓ 3 documents generated
 
 [4/4] Generating sample questions...
-  → 15 demo questions spanning data, documents, and combined
+  → 15 sample questions spanning data, documents, and combined
   ✓ sample_questions.txt
 
 ============================================================
@@ -69,7 +69,7 @@ Check what was created:
 # View the generated files
 ls data/*/
 
-# Read sample questions for your demo
+# Read sample questions for testing
 cat data/*/config/sample_questions.txt
 ```
 
@@ -127,7 +127,7 @@ Building Solution: Insurance
   ✓ Agent: insurance-multi-agent
 
 ============================================================
-Build complete! Ready for customer demo.
+Build complete! Ready for customer PoC.
 ============================================================
 ```
 
@@ -147,4 +147,4 @@ Build complete! Ready for customer demo.
 
 ---
 
-[← Overview](index.md) | [Demo Your PoC →](03-demo.md)
+[← Overview](index.md) | [Test Your PoC →](03-demo.md)

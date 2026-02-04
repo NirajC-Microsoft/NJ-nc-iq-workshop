@@ -71,4 +71,4 @@ This section prepares you for technical questions during customer conversations.
 
 ---
 
-[← Demo Your PoC](../02-customize/03-demo.md) | [Foundry IQ: Documents →](01-foundry-iq.md)
+[← Test Your PoC](../02-customize/03-demo.md) | [Foundry IQ: Documents →](01-foundry-iq.md)
