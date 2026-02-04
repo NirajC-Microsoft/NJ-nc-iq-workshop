@@ -2,7 +2,7 @@
 
 Build AI agents that combine **unstructured document knowledge** with **structured enterprise data** using knowledge bases, ontology, and natural language queries.
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/YOUR-ORG/fabric-ontology-lab?quickstart=1)
+<a href="https://codespaces.new/NirajC-Microsoft/NJ-nc-iq-workshop?quickstart=1" target="_blank"><img src="https://github.com/codespaces/badge.svg" alt="Open in GitHub Codespaces"></a>
 
 ## The Opportunity
 
@@ -39,8 +39,8 @@ This lab enables an intelligent agent that:
 
 ### Open the Lab
 
-[![Open in GitHub Codespaces](https://img.shields.io/badge/GitHub-Codespaces-blue?logo=github)](https://codespaces.new/YOUR-ORG/fabric-ontology-lab?quickstart=1)
-[![Open in VS Code](https://img.shields.io/badge/VS%20Code-Dev%20Containers-blue?logo=visualstudiocode)](https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/YOUR-ORG/fabric-ontology-lab)
+<a href="https://codespaces.new/nchandhi/nc-iq-workshop?quickstart=1" target="_blank"><img src="https://img.shields.io/badge/GitHub-Codespaces-blue?logo=github" alt="Open in GitHub Codespaces"></a>
+<a href="https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/nchandhi/nc-iq-workshop" target="_blank"><img src="https://img.shields.io/badge/VS%20Code-Dev%20Containers-blue?logo=visualstudiocode" alt="Open in VS Code"></a>
 
 ---
 
