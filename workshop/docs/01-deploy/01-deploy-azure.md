@@ -21,13 +21,7 @@ This opens a browser for authentication.
 azd up
 ```
 
-When prompted, enter:
-
-| Prompt | Value |
-|--------|-------|
-| Environment name | `iq-workshop-yourname` |
-| Azure subscription | Your subscription |
-| Azure location | `eastus2` or `westus2` |
+Follow the prompts to select your environment name, subscription, and location etc.
 
 !!! warning "Wait for Completion"
     Deployment takes 5-7 minutes. Don't proceed until you see the success message.

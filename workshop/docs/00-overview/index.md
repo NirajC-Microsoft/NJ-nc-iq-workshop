@@ -20,4 +20,4 @@ This workshop helps you learn how to use solution accelerators to solve that by 
 
 ---
 
-[What you'll build →](what-youll-build.md)
+[Get Started →](../00-get-started/index.md)
