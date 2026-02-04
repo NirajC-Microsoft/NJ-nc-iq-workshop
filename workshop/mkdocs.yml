@@ -57,8 +57,12 @@ extra:
       link: https://github.com/nchandhi/nc-iq-workshop
 
 nav:
-  - Overview: index.md
-  - Get Started: get-started.md
+  - Overview:
+    - Overview: 00-overview/index.md
+    - What you'll build: 00-overview/what-youll-build.md
+  - Get Started:
+    - Prerequisites: 00-get-started/index.md
+    - Your PoC journey: 00-get-started/poc-journey.md
   - Deploy solution:
     - Overview: 01-deploy/index.md
     - Deploy Azure resources: 01-deploy/01-deploy-azure.md
@@ -68,9 +72,11 @@ nav:
   - Customize for your use case:
     - Overview: 02-customize/index.md
     - Generate & Build: 02-customize/02-generate.md
-    - Demo Your PoC: 02-customize/03-demo.md
+    - Test Your PoC: 02-customize/03-demo.md
   - Deep dive:
     - Overview: 03-understand/index.md
     - "Foundry IQ: Documents": 03-understand/01-foundry-iq.md
     - "Fabric IQ: Data": 03-understand/02-fabric-iq.md
-  - Cleanup: 04-cleanup.md
+  - Cleanup:
+    - Delete resources: 04-cleanup/index.md
+    - Next steps: 04-cleanup/next-steps.md

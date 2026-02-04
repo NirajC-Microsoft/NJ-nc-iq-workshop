@@ -4,16 +4,6 @@ A strong PoC helps customers envision the impact of solutions on their business.
 
 This workshop helps you learn how to use solution accelerators to solve that by deploying industry-tailored scenarios quickly so you can demonstrate real value from the first conversation.
 
-## Let's build it together
-
-In this workshop, we'll deploy an AI solution using Fabric IQ and Foundry IQ, then customize it for your use case.
-
-Powered by **Microsoft Fabric** and **Microsoft Foundry**:
-
-- **Fabric IQ**: Translates natural language into SQL queries via ontology
-- **Foundry IQ**: Searches documents using agentic retrieval (plan, iterate, reflect)
-- **Multi-Tool Agent**: Routes questions to the right source automatically
-
 ## Workshop flow
 
 | Step | Description | Time |
@@ -30,5 +20,4 @@ Powered by **Microsoft Fabric** and **Microsoft Foundry**:
 
 ---
 
-[Get Started →](get-started.md)
-
+[What you'll build →](what-youll-build.md)

@@ -16,4 +16,4 @@ The solution combines Microsoft Fabric and Microsoft Foundry to create an AI sol
 
 ---
 
-[← Get Started](../get-started.md) | [Deploy Azure resources →](01-deploy-azure.md)
+[← Get Started](../00-get-started/poc-journey.md) | [Deploy Azure resources →](01-deploy-azure.md)
